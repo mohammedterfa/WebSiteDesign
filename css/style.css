@@ -197,3 +197,14 @@ header.scrolled .logo{
     align-items: center;
 }
 
+.sub-heading{
+    color: var(--heading-color);
+    text-transform: uppercase;
+    font-size: .85rem;
+    letter-spacing: .5px;
+    border-left: 3px solid var(--main-color-2);
+    padding: .13rem .75rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
