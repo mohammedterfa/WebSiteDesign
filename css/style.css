@@ -222,3 +222,17 @@ header.scrolled .logo{
     margin: 2rem 0;
 }
 
+.showcase-area .sub-heading{
+    margin-bottom: .7rem;
+
+}
+
+.showcase-area .heading{
+    font-size: 3.5rem;
+    
+}
+
+
+.showcase-area .text{
+    margin: .8rem 0;
+}
