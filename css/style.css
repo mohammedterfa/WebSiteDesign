@@ -236,3 +236,10 @@ header.scrolled .logo{
 .showcase-area .text{
     margin: .8rem 0;
 }
+
+.cta{
+    margin-top: 3.5rem;
+    display: flex;
+    align-items: center;
+    
+}
