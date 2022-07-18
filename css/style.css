@@ -259,3 +259,13 @@ header.scrolled .logo{
     letter-spacing: .4px;
     text-transform: capitalize;
 }
+
+.btn.secondary-btn{
+    background-color: transparent;
+    color: var(--main-color-1);
+    font-weight: 500;
+    font-size: .9rem;
+    letter-spacing: 0px;
+    border-bottom: 2.5px solid var(--main-color-2);
+    
+}
