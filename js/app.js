@@ -90,7 +90,7 @@ function mlCounter(){
     mlPlayed = true;
     ml_counters.forEach(ctr => {
         let target = +ctr.dataset.target;
-
+        
         setTimeout(() => {
             updateCount(ctr, target);
         }, 400);
