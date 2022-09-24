@@ -29,11 +29,18 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     overflow-x: hidden;
     background-color: var(--bg-color);
     font-family: "Poppins", sans-serif;
 }
+
+
+
 
 
 
@@ -161,12 +168,12 @@ header.scrolled .logo{
 
 }
 
-.nav-link:hover{
+.nav-link:hover, .nav-link.active{
     color: var(--heading-color);
 }
 
 
-.nav-link:hover::after{
+.nav-link:hover::after, .nav-link.active::after{
     width: 100%;
     opacity: 0.2;
 }
@@ -1136,4 +1143,5 @@ footer .social-media{
 
 .social-link:hover{
     color: var(--main-color-1);
+
 }
