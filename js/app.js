@@ -16,6 +16,8 @@ const next_btn = document.querySelector(".next-btn");
 
 const links = document.querySelectorAll(".nav-link");
 
+const toggle_btn = document.querySelector(".toggle-btn");
+
 
 window.addEventListener("scroll", ()=>{
     activeLink();
@@ -203,3 +205,19 @@ const swiper = new Swiper('.swiper', {
   }
 
   activeLink();
+
+   /*----------------- change page theme --------------------*/
+
+function changeTheme(){
+    if(!document.body.classList.contains("dark")){
+        document.body.classList.add("dark");
+        toggle_btn.classList.replace("uil-moon", "uil-sun");
+    }else{
+        document.body.classList.remove("dark");
+        toggle_btn.classList.replace("uil-sun", "uil-moon");
+    }
+}
+
+toggle_btn.addEventListener("click", () => {
+    changeTheme();
+});
