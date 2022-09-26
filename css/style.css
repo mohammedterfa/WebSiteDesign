@@ -1567,4 +1567,87 @@ footer .social-media{
     .srv-card .text{
         margin: .4rem 0 .8rem;
     }
+
+    .portfolio-title{
+        padding-bottom: 0;
+    }
+
+    .testimonials{
+        padding: var(--section-padding) 0;
+    }
+
+    .testimonials .container{
+        position: revert;
+        grid-template-columns: 1fr;
+    }
+
+    .section-background{
+        transform: translateX(0);
+        left: 0;
+        border-radius: 0;
+        top: 0;    
+        height: 100%;
+    }
+
+    .section-background .person,
+     .section-background .circle{
+        display: none;
+    }
+
+    .swiper{
+        order: 2;
+        padding: 2rem 0;
+        max-width: 620px;
+    }
+
+    .testimonials-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 0 3rem 0;
+    }
+
+    .swiper-slide{
+        padding: 0 2rem;
+    }
+
+    .swiper-slide .text{
+        margin: 1rem 0 0;
+    }
+
+    .client{
+        grid-template-columns: 65px 1fr;
+    }
+
+    .client-info h4{
+        margin-bottom: .2rem;
+        font-size: .97rem;
+    }
+
+    .client-info h5{
+        font-size: .7rem;
+    }
+
+    .section-background .square{
+        left: 86%;
+        top: 12%;
+        width: 60px;
+    }
+
+    .contact .container{
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+
+    .contact .square{
+        width: 60px;
+        bottom: 68%;
+        left: 75%;
+    }
+
+    .contact .triangle{
+        left: 20%;
+        top: 101%;
+    }
 }
