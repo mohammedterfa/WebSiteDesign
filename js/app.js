@@ -237,3 +237,7 @@ toggle_btn.addEventListener("click", () => {
 hamburger.addEventListener("click", () => {
     document.body.classList.toggle("open");
 });
+
+links.forEach(link => link.addEventListener("click", () =>{
+    document.body.classList.remove("open");
+}));

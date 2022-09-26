@@ -1355,7 +1355,6 @@ footer .social-media{
 
     .hamburger{
         display: block;
-        background-color: black;
     }
 
     .links{
@@ -1365,7 +1364,8 @@ footer .social-media{
         align-items: center;
         justify-content: center;
         padding: .5rem 0 2rem;
-         
+        opacity: 0;
+        transition: .3s;
     }
 
     header nav{
@@ -1398,7 +1398,7 @@ footer .social-media{
         top:-.5rem;
         left: 50%;
         transform: translate(-50%,-50%);
-
+        transition: .3s;
     }
 
     .overlay{
@@ -1432,7 +1432,96 @@ footer .social-media{
 
     body.open .overlay{
         opacity: 1;
-
+        pointer-events: auto;
     }
 
+    body.open .links ul::after{
+        opacity: .7;
+        width: 100%;
+    }
+
+    body.open header.scrolled{
+        max-height: 485px;
+    }
+
+    body.open .links{
+        opacity: 1;
+    }
+
+    .showcase-area .container{
+        grid-template-columns: 1fr;
+        height: revert;
+        justify-items: center;
+        row-gap: 4rem;
+    }
+
+    .showcase-image{
+        min-height: revert;
+        height: 100vw;
+        max-height: 570px;
+        max-width:450px;
+        margin-top: 0px;
+        border-radius: 40px;
+    }
+
+    .showcase-info{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .showcase-area .text{
+        margin: .2rem 0;
+    }
+
+    .cta{
+        margin-top: 1rem;
+    }
+
+    .showcase-area .circle{
+        width: 120px;
+    }
+
+    .showcase-area .square{
+        left: 80%;
+        top: 20%;
+    }
+
+    .about .container{
+        grid-template-columns: 1fr;
+    }
+
+    .about-grid{
+        order: 3;
+    }
+
+    .heading br{
+        display: none;
+    }
+
+    .about .text{
+        margin: 1rem 0 1.5rem;
+    }
+
+    .about-grid{
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 150px 150px;
+        margin: 2.5rem 0 0 0;
+        column-gap: 2rem;
+        row-gap: 80px;
+    }
+
+    .icon{
+        width: 50px;
+    }
+
+    .about-card h3{
+        font-size: .8rem;
+        margin-top: .5rem;
+    }
+
+    .about-grid::before{
+        width: 150px;
+        height: 150px;
+        border-width: 10px;
+    }
 }
